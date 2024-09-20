@@ -1,4 +1,4 @@
 # Todo
-> Formatting
-> Linting
-> LSP-s for java, golang, typescript, php, c, rust
+1. Formatting
+2. Linting
+3. LSP-s for java, golang, typescript, php, c, rust
