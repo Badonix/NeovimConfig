@@ -5,3 +5,4 @@ end
 
 require "badonix.lsp.mason"
 require("badonix.lsp.handlers").setup()
+require "badonix.lsp.none-ls"

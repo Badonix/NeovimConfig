@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "/home/nick/.local/share/nvim/site/pack/packer/start/mellifluous.nvim",
     url = "https://github.com/ramojus/mellifluous.nvim"
   },
+  ["none-ls.nvim"] = {
+    loaded = true,
+    path = "/home/nick/.local/share/nvim/site/pack/packer/start/none-ls.nvim",
+    url = "https://github.com/nvimtools/none-ls.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/home/nick/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
