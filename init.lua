@@ -12,5 +12,6 @@ require "badonix.comment"
 require "badonix.presence"
 require "badonix.gitsigns"
 require "badonix.nvim-tree"
+require "badonix.bufferline"
 
 
