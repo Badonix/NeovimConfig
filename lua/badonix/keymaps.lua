@@ -68,6 +68,20 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 keymap("n", "<leader>ff", "<cmd>Telescope find_files theme=ivy<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
+keymap("n", "<C-d>", "<C-d>zz", opts)
 
+-- Awesome keymaps
+keymap("n", "J", "mzJ`z", opts)
+keymap("n", "n", "nzzzv", opts)
+keymap("n", "N", "Nzzzv", opts)
+
+keymap("n", "<leader>y", '"+y', opts)
+keymap("v", "<leader>y", '"+y', opts)
+keymap("n", "<leader>Y", '"+Y', opts)
+keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], opts)
+keymap("n", "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>", opts)
+keymap("n", "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>", opts)
+keymap("n", "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>", opts)
+keymap("n", "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>", opts)
 -- Nvimtree
 keymap("n", "<C-n>", ":NvimTreeToggle<cr>", opts)

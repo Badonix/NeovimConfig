@@ -2,6 +2,8 @@ local servers = {
 	"lua_ls",
 	"jsonls",
 	"gopls",
+	--[[ "ts_ls", ]]
+	"tailwindcss",
 }
 
 local settings = {
@@ -45,3 +47,8 @@ for _, server in pairs(servers) do
 
 	lspconfig[server].setup(opts)
 end
+lspconfig.ts_ls.setup({
+	on_attach = require("badonix.lsp.handlers").on_attach,
+	filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+	cmd = { "typescript-language-server", "--stdio" },
+})
