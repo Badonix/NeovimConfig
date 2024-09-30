@@ -49,3 +49,5 @@ vim.cmd([[
   highlight NvimTreeNormal guifg=#ffffff guibg=#1f2335
   highlight NvimTreeWinSeparator guifg=#a89984 guibg=#1f2335
 ]])
+
+vim.o.guicursor = "n-v-c-sm:block,ci-ve:ver25,r-cr-o:hor20,i:block-blinkwait700-blinkoff400-blinkon250-Cursor/lCursor"
