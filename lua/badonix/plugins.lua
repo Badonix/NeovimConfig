@@ -106,7 +106,7 @@ return packer.startup(function(use)
 
 	use("nvimtools/none-ls.nvim")
 	use("windwp/nvim-ts-autotag")
-
+	use("rose-pine/neovim")
 	use("christoomey/vim-tmux-navigator")
 	-- Automatically set up your configuration after cloning packer.nvim
 

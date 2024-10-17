@@ -49,6 +49,12 @@ for _, server in pairs(servers) do
 end
 lspconfig.ts_ls.setup({
 	on_attach = require("badonix.lsp.handlers").on_attach,
-	filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+	capabilities = require("badonix.lsp.handlers").capabilities,
+	init_options = {
+		preferences = {
+			disableSuggestions = true,
+		},
+	},
+	filetypes = { "typescript", "javascript", "typescriptreact", "typescript.tsx" },
 	cmd = { "typescript-language-server", "--stdio" },
 })
