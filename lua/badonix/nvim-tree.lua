@@ -31,3 +31,10 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.cmd("hi NvimTreeRootFolder guifg=#FFFFFF")
 	end,
 })
+vim.api.nvim_create_autocmd("ColorScheme", {
+	pattern = "*",
+	callback = function()
+		vim.cmd("highlight LineNr guibg=none")
+		vim.cmd("highlight SignColumn guibg=NONE")
+	end,
+})

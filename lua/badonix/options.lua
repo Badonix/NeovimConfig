@@ -9,8 +9,8 @@ vim.opt.hlsearch = true -- highlight all matches on previous search pattern
 vim.opt.ignorecase = true -- ignore case in search patterns
 vim.opt.mouse = "a" -- allow the mouse to be used in neovim
 vim.opt.pumheight = 10 -- pop up menu height
-vim.opt.showmode = true -- we don't need to see things like -- INSERT -- anymore
-vim.opt.showtabline = 2 -- always show tabs
+vim.opt.showmode = false -- we don't need to see things like -- INSERT -- anymore
+--[[ vim.opt.showtabline = 2 -- always show tabs ]]
 vim.opt.smartcase = true -- smart case
 vim.opt.smartindent = true -- make indenting smarter again
 vim.opt.splitbelow = true -- force all horizontal splits to go below current window
@@ -49,5 +49,9 @@ vim.cmd([[
   highlight NvimTreeNormal guifg=#ffffff guibg=#1f2335
   highlight NvimTreeWinSeparator guifg=#a89984 guibg=#1f2335
 ]])
+-- Make the background of all line numbers transparent
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#5c6370", bg = "NONE" })
 
+-- Make the background of the current line number transparent
+vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#ffffff", bg = "NONE" })
 vim.o.guicursor = "n-v-c-sm:block,ci-ve:ver25,r-cr-o:hor20,i:block-blinkwait700-blinkoff400-blinkon250-Cursor/lCursor"
