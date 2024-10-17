@@ -2,7 +2,7 @@ local servers = {
 	"lua_ls",
 	"jsonls",
 	"gopls",
-	--[[ "ts_ls", ]]
+	"pyright",
 	"tailwindcss",
 }
 
@@ -55,6 +55,6 @@ lspconfig.ts_ls.setup({
 			disableSuggestions = true,
 		},
 	},
-	filetypes = { "typescript", "javascript", "typescriptreact", "typescript.tsx" },
+	filetypes = { "typescript", "javascript", "typescriptreact", "javascript.jsx", "typescript.tsx" },
 	cmd = { "typescript-language-server", "--stdio" },
 })
