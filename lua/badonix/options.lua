@@ -44,14 +44,14 @@ vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd([[set iskeyword+=-]])
 vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work
 
-vim.cmd([[hi NvimTreeRootFolder guifg=#FFFFFF]])
-vim.cmd([[
-  highlight NvimTreeNormal guifg=#ffffff guibg=#1f2335
-  highlight NvimTreeWinSeparator guifg=#a89984 guibg=#1f2335
-]])
+-- vim.cmd([[hi NvimTreeRootFolder guifg=#FFFFFF]])
+-- vim.cmd([[
+--  highlight NvimTreeNormal guifg=#ffffff guibg=#1f2335
+-- highlight NvimTreeWinSeparator guifg=#a89984 guibg=#1f2335
+-- ]])
 -- Make the background of all line numbers transparent
-vim.api.nvim_set_hl(0, "LineNr", { fg = "#5c6370", bg = "NONE" })
+--[[ vim.api.nvim_set_hl(0, "LineNr", { fg = "#5c6370", bg = "NONE" }) ]]
 
 -- Make the background of the current line number transparent
-vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#ffffff", bg = "NONE" })
+--[[ vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#ffffff", bg = "NONE" }) ]]
 vim.o.guicursor = "n-v-c-sm:block,ci-ve:ver25,r-cr-o:hor20,i:block-blinkwait700-blinkoff400-blinkon250-Cursor/lCursor"
