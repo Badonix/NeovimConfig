@@ -15,6 +15,7 @@ require("badonix.nvim-tree")
 --[[ require("badonix.bufferline") ]]
 require("badonix.nvim-ts-autotag")
 require("badonix.vim-tmux-navigator")
+require("badonix.harpoon")
 vim.cmd([[
   highlight NvimTreeNormal guibg=NONE
 ]])
