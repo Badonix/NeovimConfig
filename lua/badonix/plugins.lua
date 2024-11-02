@@ -45,16 +45,6 @@ return packer.startup(function(use)
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 
-	-- colorschemes
-	use({
-		"ramojus/mellifluous.nvim",
-		-- version = "v0.*", -- uncomment for stable config (some features might be missed if/when v1 comes out)
-		config = function()
-			require("mellifluous").setup({}) -- optional, see configuration section.
-			vim.cmd("colorscheme mellifluous")
-		end,
-	})
-
 	-- autocompletion
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -106,8 +96,9 @@ return packer.startup(function(use)
 
 	use("nvimtools/none-ls.nvim")
 	use("windwp/nvim-ts-autotag")
-	use("rose-pine/neovim")
 	use("christoomey/vim-tmux-navigator")
+
+	use("nyoom-engineering/oxocarbon.nvim")
 	-- Automatically set up your configuration after cloning packer.nvim
 
 	-- Put this at the end after all plugins
