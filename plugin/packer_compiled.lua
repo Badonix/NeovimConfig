@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/nick/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["awesome-vim-colorschemes"] = {
+    loaded = true,
+    path = "/home/nick/.local/share/nvim/site/pack/packer/start/awesome-vim-colorschemes",
+    url = "https://github.com/rafi/awesome-vim-colorschemes"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/nick/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -134,6 +139,11 @@ _G.packer_plugins = {
     path = "/home/nick/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/home/nick/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/nick/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -148,6 +158,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nick/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nightfox.nvim"] = {
+    config = { "\27LJ\2\n•\3\0\0\6\0\22\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\t\0005\4\b\0=\4\n\0035\4\v\0=\4\f\3=\3\r\0025\3\17\0005\4\15\0005\5\14\0=\5\16\4=\4\n\3=\3\18\2B\0\2\0016\0\19\0009\0\20\0'\2\21\0B\0\2\1K\0\1\0\24colorscheme nordfox\bcmd\bvim\vgroups\1\0\1\ball\0\rNormalNC\1\0\1\rNormalNC\0\1\0\2\afg\bfg1\abg\rinactive\nspecs\fduskfox\1\0\1\rinactive\f#090909\ball\1\0\2\ball\0\fduskfox\0\1\0\1\rinactive\bbg0\rpalettes\1\0\3\vgroups\0\rpalettes\0\nspecs\0\fnordfox\1\0\1\fnordfox\0\1\0\4\bbg3\f#000000\bbg0\f#000000\tsel0\f#121820\bbg1\f#000000\nsetup\rnightfox\frequire\0" },
+    loaded = true,
+    path = "/home/nick/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["none-ls.nvim"] = {
     loaded = true,
@@ -242,6 +258,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nightfox.nvim
+time([[Config for nightfox.nvim]], true)
+try_loadstring("\27LJ\2\n•\3\0\0\6\0\22\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\t\0005\4\b\0=\4\n\0035\4\v\0=\4\f\3=\3\r\0025\3\17\0005\4\15\0005\5\14\0=\5\16\4=\4\n\3=\3\18\2B\0\2\0016\0\19\0009\0\20\0'\2\21\0B\0\2\1K\0\1\0\24colorscheme nordfox\bcmd\bvim\vgroups\1\0\1\ball\0\rNormalNC\1\0\1\rNormalNC\0\1\0\2\afg\bfg1\abg\rinactive\nspecs\fduskfox\1\0\1\rinactive\f#090909\ball\1\0\2\ball\0\fduskfox\0\1\0\1\rinactive\bbg0\rpalettes\1\0\3\vgroups\0\rpalettes\0\nspecs\0\fnordfox\1\0\1\fnordfox\0\1\0\4\bbg3\f#000000\bbg0\f#000000\tsel0\f#121820\bbg1\f#000000\nsetup\rnightfox\frequire\0", "config", "nightfox.nvim")
+time([[Config for nightfox.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

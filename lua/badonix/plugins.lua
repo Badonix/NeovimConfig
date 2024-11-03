@@ -104,7 +104,41 @@ return packer.startup(function(use)
 		branch = "harpoon2",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
+	use("rafi/awesome-vim-colorschemes")
+	use({
+		"EdenEast/nightfox.nvim",
+		config = function()
+			require("nightfox").setup({
+				palettes = {
+					-- Custom duskfox with black background
+					nordfox = {
+						bg1 = "#000000", -- Black background
+						bg0 = "#000000", -- Alt backgrounds (floats, statusline, ...)
+						bg3 = "#000000", -- 55% darkened from stock
+						sel0 = "#121820", -- 55% darkened from stock
+					},
+				},
+				specs = {
+					all = {
+						inactive = "bg0", -- Default value for other styles
+					},
+					duskfox = {
+						inactive = "#090909", -- Slightly lighter then black background
+					},
+				},
+				groups = {
+					all = {
+						NormalNC = { fg = "fg1", bg = "inactive" }, -- Non-current windows
+					},
+				},
+			})
+			vim.cmd("colorscheme nordfox")
+		end,
+	})
+
+	use({ "rebelot/kanagawa.nvim" })
 	-- Automatically set up your configuration after cloning packer.nvim
+	--
 
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
