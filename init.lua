@@ -17,7 +17,3 @@ require("badonix.nvim-ts-autotag")
 --[[ require("badonix.dap") ]]
 require("badonix.vim-tmux-navigator")
 require("badonix.harpoon")
-vim.cmd([[
-  highlight NvimTreeNormal guibg=NONE
-]])
-vim.cmd("highlight Normal guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE")

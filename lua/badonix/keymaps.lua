@@ -83,5 +83,6 @@ keymap("n", "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>", opts)
 keymap("n", "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>", opts)
 keymap("n", "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>", opts)
 keymap("n", "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>", opts)
+keymap("n", "<leader>/", ":noh<cr>", opts)
 -- Nvimtree
 keymap("n", "<C-n>", ":NvimTreeToggle<cr>", opts)

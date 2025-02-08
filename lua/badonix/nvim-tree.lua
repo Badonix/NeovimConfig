@@ -13,9 +13,6 @@ require("nvim-tree").setup({
 		highlight_git = true,
 		group_empty = true,
 	},
-	filters = {
-		dotfiles = false,
-	},
 	open_on_tab = false,
 	hijack_cursor = false,
 	update_cwd = true,
@@ -24,17 +21,3 @@ require("nvim-tree").setup({
 		auto_open = true,
 	},
 })
-
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "NvimTree",
-	callback = function()
-		vim.cmd("hi NvimTreeRootFolder guifg=#FFFFFF")
-	end,
-})
---[[ vim.api.nvim_create_autocmd("ColorScheme", { ]]
---[[ 	pattern = "*", ]]
---[[ 	callback = function() ]]
---[[ 		vim.cmd("highlight LineNr guibg=none") ]]
---[[ 		vim.cmd("highlight SignColumn guibg=NONE") ]]
---[[ 	end, ]]
---[[ }) ]]
