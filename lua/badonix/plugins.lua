@@ -123,7 +123,7 @@ return packer.startup(function(use)
 						bg1 = "#000000", -- Black background
 						bg0 = "#000000", -- Alt backgrounds (floats, statusline, ...)
 						bg3 = "#000000", -- 55% darkened from stock
-						fg3 = "#ffffff",
+						fg3 = "#3b3b3b",
 						sel0 = "#121820", -- 55% darkened from stock
 					},
 				},
