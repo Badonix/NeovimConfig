@@ -1,6 +1,5 @@
 local null_ls_status_ok, null_ls = pcall(require, "null-ls")
 if not null_ls_status_ok then
-	print("IM HERE")
 	return
 end
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
@@ -15,6 +14,7 @@ null_ls.setup({
 	sources = {
 		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
 		formatting.black.with({ extra_args = { "--fast" } }),
+		formatting.clang_format,
 		formatting.google_java_format,
 		formatting.gofmt,
 		-- formatting.yapf,

@@ -10,10 +10,11 @@ require("badonix.treesitter")
 require("badonix.autopairs")
 require("badonix.comment")
 require("badonix.presence")
---[[ require("badonix.gitsigns") ]]
+require("badonix.gitsigns")
 require("badonix.nvim-tree")
 --[[ require("badonix.bufferline") ]]
 require("badonix.nvim-ts-autotag")
+--[[ require("badonix.dap") ]]
 require("badonix.vim-tmux-navigator")
 require("badonix.harpoon")
 vim.cmd([[

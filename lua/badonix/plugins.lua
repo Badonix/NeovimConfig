@@ -106,6 +106,14 @@ return packer.startup(function(use)
 	})
 	use("rafi/awesome-vim-colorschemes")
 	use({
+		"mfussenegger/nvim-dap",
+		requires = {
+			"rcarriga/nvim-dap-ui",
+			"theHamsta/nvim-dap-virtual-text",
+			"nvim-neotest/nvim-nio",
+		},
+	})
+	use({
 		"EdenEast/nightfox.nvim",
 		config = function()
 			require("nightfox").setup({
